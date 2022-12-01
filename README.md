@@ -2,10 +2,9 @@
 
 My solutions to problems from AOC 2022, written in Nim.
 
-## Create a template und compile
+## Create and run template
 
 ```sh
-./create <number>
-cd day<number>
-nim c -o:bin/day<number> -r day<number>.nim
+source create.sh <number>
+nim c -o:bin/day<number> -d:release -r day<number>.nim
 ```

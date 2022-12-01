@@ -2,4 +2,4 @@
 nimcache/
 nimblecache/
 htmldocs/
-bin/*
+*/bin/*
