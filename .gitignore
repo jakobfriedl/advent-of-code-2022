@@ -1,3 +1,5 @@
+.aocrc
 nimcache/
 nimblecache/
 htmldocs/
+bin/*
