@@ -43,18 +43,11 @@ var lines = readFile(file).splitLines().mapIt(it.split(' '))
 var points_one : int = 0
 for l in lines: 
     if win.getOrDefault(l[1]) == l[0]:
-        points_one+=6
+        points_one+=6 + values[l[1]]
     elif draw.getOrDefault(l[1]) == l[0]:
-        points_one+=3
+        points_one+=3 + values[l[1]]
     else: 
-        points_one+=0
-
-    if l[1] == "X":
-        points_one+=1
-    if l[1] == "Y":
-        points_one+=2
-    if l[1] == "Z":
-        points_one+=3
+        points_one+=0 + values[l[1]]
 
 var points_two : int = 0
 for l in lines:
