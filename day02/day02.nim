@@ -1,6 +1,4 @@
 import strutils, sequtils
-import algorithm, math
-import sugar
 import tables
 
 const values = {
