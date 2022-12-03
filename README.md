@@ -2,6 +2,13 @@
 
 My solutions to problems from AOC 2022, written in Nim.
 
+## Dependencies
+
+Install Nim
+```sh
+curl https://nim-lang.org/choosenim/init.sh -sSf | sh
+```
+
 ## Create and run template
 
 ```sh
