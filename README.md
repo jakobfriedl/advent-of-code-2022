@@ -15,3 +15,22 @@ curl https://nim-lang.org/choosenim/init.sh -sSf | sh
 source create.sh <number>
 nim c -o:bin/day<number> -d:release -r day<number>.nim
 ```
+
+## Solutions
+<!-- AOC TILES BEGIN -->
+<h1 align="center">
+  2022 - 8 ⭐
+</h1>
+<a href="day01/day01.nim">
+  <img src="media/2022/01.png" width="161px">
+</a>
+<a href="day02/day02.nim">
+  <img src="media/2022/02.png" width="161px">
+</a>
+<a href="day03/day03.nim">
+  <img src="media/2022/03.png" width="161px">
+</a>
+<a href="day04/day04.nim">
+  <img src="media/2022/04.png" width="161px">
+</a>
+<!-- AOC TILES END -->
