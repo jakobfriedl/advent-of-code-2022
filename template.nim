@@ -2,9 +2,8 @@ import strutils, sequtils
 import algorithm, math
 import sugar
 
-var 
-    file = "./test.txt"
-    lines = readFile(file).splitLines()
+const file = "./test.txt"
+let lines = readFile(file).splitLines()
 
 proc part_one(): int = 
     discard
