@@ -3,5 +3,5 @@ repos:
     hooks:
       - id: create-day-tiles
         name: create-day-tiles
-        entry: python3 tiles/create_aoc_tiles.py
+        entry: python3 gen-tiles/create_aoc_tiles.py
         language: system

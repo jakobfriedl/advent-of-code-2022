@@ -35,7 +35,7 @@ AOC_DIR = Path(__file__).absolute().parent.parent
 
 # The directory where the image files for the tiles are stored. This should be committed to git.
 # Year directories are created in this directory, then each day is saved as 01.png, 02.png, etc.
-IMAGE_DIR = AOC_DIR / "media"
+IMAGE_DIR = AOC_DIR / "tiles"
 
 # Path to the README file where the tiles should be added
 README_PATH = AOC_DIR / "README.md"
@@ -331,7 +331,8 @@ def handle_day(day: int, year: int, solutions: list[str], html: HTML, day_scores
         extension = "." + solution.split(".")[-1]
         if extension in extension_to_color and extension not in languages:
             languages.append(extension)
-    solution_link = solutions[0] if solutions else None
+    # if _v2 version exists, link to it
+    solution_link = solutions[-1] if solutions else None
     if DEBUG:
         if day == 25:
             languages = []
