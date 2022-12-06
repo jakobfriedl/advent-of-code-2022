@@ -19,7 +19,7 @@ nim c -o:bin/day<number> -d:release -r day<number>.nim
 ## Solutions
 <!-- AOC TILES BEGIN -->
 <h1 align="center">
-  2022 - 10 ⭐
+  2022 - 12 ⭐
 </h1>
 <a href="day01/day01_v2.nim">
   <img src="tiles/2022/01.png" width="161px">
@@ -35,5 +35,8 @@ nim c -o:bin/day<number> -d:release -r day<number>.nim
 </a>
 <a href="day05/day05.nim">
   <img src="tiles/2022/05.png" width="161px">
+</a>
+<a href="day06/day06.nim">
+  <img src="tiles/2022/06.png" width="161px">
 </a>
 <!-- AOC TILES END -->
