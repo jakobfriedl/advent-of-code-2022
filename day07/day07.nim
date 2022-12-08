@@ -41,6 +41,5 @@ proc part_two(): int =
         else: 
             result = smallest.val
             
-
 echo "Part one: ", part_one()
 echo "Part two: ", part_two()
