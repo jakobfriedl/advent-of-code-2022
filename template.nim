@@ -1,9 +1,11 @@
-import strutils, sequtils
-import algorithm, math
-import sugar
+import std/[
+    strutils, sequtils,
+    algorithm, math,
+    sugar
+]
 
 const file = "./test.txt"
-let lines = readFile(file).splitLines()
+let lines = readFile(file).strip().splitLines()
 
 proc part_one(): int = 
     discard
