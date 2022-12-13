@@ -1,10 +1,10 @@
 import std/[strutils, sequtils, algorithm]
 
 type 
-    Comparision = enum
-        LESS_THAN,
-        GREATER_THAN,
-        EQUAL
+    Comparison = enum
+        LESS_THAN = -1,
+        EQUAL = 0
+        GREATER_THAN = 1,
     PacketType = enum 
         INTEGER,
         LIST
@@ -42,7 +42,7 @@ proc parseInput(packet: string, offset: int): (Packet, int) =
 
     return (Packet(packetType: LIST, listVal: packets), i)
 
-proc compare(packet1, packet2: Packet): Comparision = 
+proc compare(packet1, packet2: Packet): Comparison = 
     if packet1.packetType == INTEGER and packet2.packetType == INTEGER:
         if packet1.intVal < packet2.intVal: return LESS_THAN
         if packet1.intVal > packet2.intVal: return GREATER_THAN
@@ -69,10 +69,7 @@ proc compare(packet1, packet2: Packet): Comparision =
 proc compareLines(line1, line2: string): int = 
     let packet1 = parseInput(line1, 0)[0]
     let packet2 = parseInput(line2, 0)[0]
-    case compare(packet1, packet2)
-    of LESS_THAN: return -1
-    of GREATER_THAN: return 1
-    of EQUAL: return 0
+    return compare(packet1, packet2).int
 
 proc part_one(): int = 
     for index, group in lines: 
