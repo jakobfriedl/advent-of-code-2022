@@ -63,4 +63,10 @@ nim c -o:bin/day<number> -d:release -r day<number>.nim
 <a href="day14/day14.nim">
   <img src="tiles/2022/14.png" width="161px">
 </a>
+<a href="day15/day15.nim">
+  <img src="tiles/2022/15.png" width="161px">
+</a>
+<a href="day16/day16.nim">
+  <img src="tiles/2022/16.png" width="161px">
+</a>
 <!-- AOC TILES END -->
