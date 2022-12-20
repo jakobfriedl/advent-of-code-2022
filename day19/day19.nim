@@ -35,7 +35,7 @@ proc part_one(): int =
 
             newRobot: string = ""
 
-        for i in countup(1, 24): 
+        for i in countup(1, MINUTES): 
             echo "====================="
             echo "Minute ", i
             # begin production of best possible robot
